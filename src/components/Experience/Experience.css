@@ -1,0 +1,49 @@
+.experience{
+    display: flex;
+    gap:100px;
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-right: 20%;
+    /* background-color: aqua; */
+    margin-bottom: 10%;
+    
+}
+.experienceWhole{
+    margin-top: 20rem;
+    display: block;
+}
+.experience article {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid gray; */
+    border-radius: 20px;
+    width: 250px;
+    border: 7px solid var(--orangeCard);
+    box-shadow: var(--boxShadow);
+}
+
+.experience article ul{
+    list-style: none;
+    padding: 20px;
+}
+
+.experience article ul li{
+     margin-bottom: 20px;
+}
+
+.experience article .service-head{
+    /* margin-left: auto;
+    margin-right: auto; */
+    background-color: rgb(154, 167, 130);
+    
+    /* border-radius: 10px; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    padding: 25px;
+     position: relative;
+}
+
+.topExperience{
+    margin-bottom: 3rem;
+}

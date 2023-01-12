@@ -27,9 +27,9 @@ const Services = () => {
         <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
         <span>Skills</span>
         <spane>
-          Lorem ispum is simpley dummy text of printing of printing Lorem
+        Hello there, I'm kapil, I am a Full Stack Web Developer.
           <br />
-          ispum is simpley dummy text of printing
+          An Open Source enthusiast and a Computer Science student from India.
         </spane>
         <a href={Resume} download>
           <button className="button s-button">Download CV</button>
@@ -44,11 +44,15 @@ const Services = () => {
           whileInView={{ left: "14rem" }}
           transition={transition}
         >
-          <Card
-            emoji={HeartEmoji}
-            heading={"Design"}
-            detail={"Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"}
+           <Card 
+            emoji={Humble}
+            heading={"Back End development"}
+           
+              detail={["Node.js (Basics)", "MongoDB (Intermediate)", "FireBaseCloud (InterMediate)"]}
+           
+            color="rgba(252, 166, 31, 0.45)"
           />
+        
         </motion.div>
         {/* second card */}
         <motion.div
@@ -59,7 +63,7 @@ const Services = () => {
           <Card
             emoji={Glasses}
             heading={"Languages known"}
-            detail={"C (Basics), Python (Basics), Java"}
+            detail={["C (Basics)","Java (Intermediate)","python (Basics)"]}
           />
         </motion.div>
         {/* 3rd */}
@@ -68,14 +72,12 @@ const Services = () => {
           whileInView={{ left: "12rem" }}
           transition={transition}
         >
-          {/* <Card
-            emoji={Humble}
-            heading={"UI/UX"}
-            detail={
-              "Lorem ispum dummy text are usually use in section where we need some random text"
-            }
-            color="rgba(252, 166, 31, 0.45)"
-          /> */}
+          <div className="FrontEndDevelopment">
+           <Card
+            emoji={HeartEmoji}
+            heading={"Front End development"}
+            detail={["HTML (Intermediate)","CSS (Intermediate)","JavaScript (Intermediate)","React.js (Intermediate)","bootStrap (Basics)"]}
+          /></div>
         </motion.div>
         <div
           className="blur s-blur2"
