@@ -5,6 +5,7 @@ import "./App.css";
 import Experience from "./components/Experience/Experience";
 import Works from "./components/Works/Works";
 import Portfolio from "./components/Portfolio/Portfolio";
+import Port2 from "./components/Portfolio/Port2";
 import Testimonial from "./components/Testimonials/Testimonial";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
@@ -26,7 +27,8 @@ function App() {
       <Services />
       <Experience />
       {/* <Works /> */}
-      <Portfolio />
+      {/* <Portfolio /> */}
+      <Port2/>
       {/* <Testimonial /> */}
       <Contact />
       <Footer />

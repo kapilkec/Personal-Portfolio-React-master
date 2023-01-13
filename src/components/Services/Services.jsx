@@ -76,7 +76,7 @@ const Services = () => {
            <Card
             emoji={HeartEmoji}
             heading={"Front End development"}
-            detail={["HTML (Intermediate)","CSS (Intermediate)","JavaScript (Intermediate)","React.js (Intermediate)","bootStrap (Basics)"]}
+            detail={[ "HTML,CSS (Intermediate)","JavaScript (Intermediate)","React.js (Intermediate)","bootStrap (Basics)"]}
           /></div>
         </motion.div>
         <div

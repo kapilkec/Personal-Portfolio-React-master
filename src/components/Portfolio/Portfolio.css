@@ -38,3 +38,27 @@
   border-radius: 19px;
 }
 
+ 
+.ProjectSlides .ProjectButtons{
+
+  display: flex;
+  gap:2rem;
+  /* margin-top: 1rem; */
+ 
+  /* justify-content: center; */
+}
+
+/* .ProjectSlides .ProjectButtons button{
+  border: 2px solid rgb(94, 93, 93);
+  background-color:var(--orangeCard) ;
+  border-radius: 5%;
+} */
+ 
+
+.ProjectSlides img{
+  border: 7px solid var(--orangeCard);
+  /* margin: 1rem; */
+  width: 350px;
+}
+
+ 

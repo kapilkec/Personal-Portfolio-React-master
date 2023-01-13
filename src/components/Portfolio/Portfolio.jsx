@@ -24,11 +24,26 @@ const Portfolio = () => {
         className="portfolio-slider"
       >
         <SwiperSlide>
-          <img src={vtradeThumbnail} alt="" />
-          <button>demo</button>
+          <div className="ProjectSlides">
+          <span className="projectTitle">Trading Platform</span>
+            <img src={vtradeThumbnail}  alt="" />
+            
+            <div className="ProjectButtons">
+            <button className="button s-button">Live Demo</button>
+            <button className="button s-button">GitHub</button>
+            </div>
+           
+          </div>         
         </SwiperSlide>
         <SwiperSlide>
+        <div className="ProjectSlides">
+          <span className="projectTitle"> Social-media Platform</span>
           <img src={kecMedia} alt="" />
+          <div className="ProjectButtons">
+            <button className="button s-button">Live Demo</button>
+            <button className="button s-button">GitHub</button>
+            </div>
+        </div>
         </SwiperSlide>
         <SwiperSlide>
           <img src={MusicApp} alt="" />
