@@ -36,17 +36,17 @@ body .containerp .cardp {
   transition: 0.5s;
 }
 
-body .containerp .cardp:nth-child(1) .boxp .contentp a {
+/* body .containerp .cardp:nth-child(1) .boxp .contentp a {
   background: #2196f3;
-}
+} */
 
-body .containerp .cardp:nth-child(2) .boxp .contentp a {
+/* body .containerp .cardp:nth-child(2) .boxp .contentp a {
   background: #e91e63;
 }
 
 body .containerp .cardp:nth-child(3) .boxp .contentp a {
   background: #23c186;
-}
+} */
 
 body .containerp .cardp .boxp {
   position: absolute;

@@ -4,13 +4,26 @@ import React, { useContext } from "react";
 import vtradeThumbnail from "../../img/vtradeThumbNail.png";
 import kecMedia from "../../img/kecMedia.png";
 import supplyChain from "../../img/supplyChain.jpg"
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function ()  {
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
+    const notify = () => { 
+    toast.error('OOPS! Demo not available', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        });
+    }
     return(
-    <div className="Port2"> 
+    <div className="Port2" id="portfolio"> 
             <div class="PortHead">
                 <span style={{color: darkMode?'white': ''}}>Recent Projects</span>
                 <span>Portfolio</span>
@@ -20,15 +33,17 @@ export default function ()  {
             <div class="cardp">
                 <div class="boxp">
                     <div class="contentp">
-                         <h1>Trading Platform</h1> 
-                         <div className="Image">
-                            <img src={vtradeThumbnail}  alt="" />
-                         </div>
+                         <h1>Trading Platform</h1>                         
+                                <img src={vtradeThumbnail}  alt="" />
+                     
                          
-                         <div className="ProjectButtons">
-                            <button className="button s-button">GitHub</button>
-                           
-                            <button className="button s-button">Demo</button>
+                         <div className="ProjectButtons" >
+                            <a href="https://github.com/kapilkec/Virtual-trading"  target={"_blank"}>
+                                <button className="button s-button">GitHub</button>
+                            </a>
+                            <a href="https://vtradesite.000webhostapp.com/" target={"_blank"}>
+                                <button className="button s-button">Demo</button> 
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -41,9 +56,12 @@ export default function ()  {
                     <img src={kecMedia} alt="" />
                         
                     <div className="ProjectButtons">
-                    <button className="button s-button">GitHub</button>
+                    <a href="https://github.com/kapilkec/zproject"  target={"_blank"}>
+                         <button className="button s-button">GitHub</button>
+                    </a>
+                    <a href="https://socialmedia-3d540.web.app/"  target={"_blank"}>
                         <button className="button s-button">Demo</button>
-                     
+                    </a>
                     </div>
                 </div>
                 </div>
@@ -56,17 +74,23 @@ export default function ()  {
                     <img src={supplyChain} alt="" />
                         
                     <div className="ProjectButtons">
-                    <button className="button s-button">GitHub</button>
-                        <button className="button s-button">Demo</button>
-                     
+                    <a href="https://github.com/kapilkec/Supply-chain"  target={"_blank"}>
+                         <button className="button s-button">GitHub</button>
+                    </a>                    
+                    
+                    <button className="button s-button" onClick={notify}>Demo</button>
+                    <ToastContainer
+                    
+                    />
+                    
                     </div>
                 </div>
                 </div>
             </div>
 
-            <div class="cardp">
-                <div class="boxp">
-                <div class="contentp">
+            <div className="cardp">
+                <div className="boxp">
+                <div className="contentp">
                      
                 </div>
                 </div>
